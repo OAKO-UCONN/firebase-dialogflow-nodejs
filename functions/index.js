@@ -24,7 +24,10 @@ exports.dialogflowGateway = functions.https.onRequest((request, response) => {
 
     const result = responses[0].queryResult;
 
+    result.fulfillmentText
+
     response.send(result);
+
   });
 });
 
